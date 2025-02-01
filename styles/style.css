@@ -119,13 +119,25 @@ ol {
   gap: 15px;
 }
 
-.search-form__pseudo-checkbox::after {
-  background-color: #fff;
-
+.search-form__pseudo-checkbox {
+  display: inline-block;
+  vertical-align: middle;
+  width: 19px;
+  height: 19px;
+  border: 1px #fff solid;
+  margin-right: 5px;
 }
 
-.search-form__pseudo-checkbox {
-  border: 1px #fff solid;
+.search-form__checkbox-list::after {
+  content: '';
+  display: none;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+}
+
+input[type="checkbox"]:checked + .search-form__checkbox-list::after {
+
 }
 
 .content__details {
