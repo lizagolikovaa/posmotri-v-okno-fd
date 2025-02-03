@@ -57,6 +57,7 @@ ol {
 }
 
 .result__video-container {
+  position: relative;
   width: 711px;
   height: 386px;
   margin-bottom: 16px;
@@ -96,6 +97,11 @@ ol {
   display: flex;
   align-items: center;
   width: fit-content;
+  cursor: pointer;
+}
+
+.search-form__label:focus {
+  outline: none;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -126,21 +132,16 @@ ol {
 
 .search-form__pseudo-checkbox {
   display: inline-block;
-  position: relative;
   width: 19px;
   height: 19px;
   border: 1px #fff solid;
   background-color: transparent;
   margin-right: 5px;
-  cursor: pointer;
 }
 
 .search-form__pseudo-checkbox::after {
   content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  vertical-align: middle;
   width: 15px;
   height: 15px;
   background-color: #fff;
@@ -199,6 +200,10 @@ ol {
   flex-direction: column;
   gap: 26px;
   min-width: 400px;
+}
+
+.content__list-container {
+  position: relative;
 }
 
 .title {
