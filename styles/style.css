@@ -14,7 +14,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -111,7 +111,7 @@ ol {
 
 .search-form__textfield {
   appearance: none;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 400;
   color: #bababa;
@@ -131,7 +131,9 @@ ol {
 }
 
 .search-form__pseudo-checkbox {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 19px;
   height: 19px;
   border: 1px #fff solid;
@@ -141,24 +143,21 @@ ol {
 }
 
 .search-form__pseudo-checkbox::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  content: "";
   width: 15px;
   height: 15px;
   background-color: #fff;
   display: none;
 }
 
-.search-form__checkbox[type=checkbox]:checked + .search-form__pseudo-checkbox::after {
+.search-form__checkbox[type="checkbox"]:checked
+  + .search-form__pseudo-checkbox::after {
   display: block;
 }
 
 .button {
   border: 1px #fff solid;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
@@ -174,7 +173,6 @@ ol {
 .button:active {
   background-color: #545050;
   text-decoration: none;
-
 }
 
 .button:focus {
@@ -316,5 +314,5 @@ ol {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }

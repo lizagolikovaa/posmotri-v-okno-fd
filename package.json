@@ -4,11 +4,11 @@
     "stylelint": "^16.14.1"
   },
   "scripts": {
-      "check": "prettier --check './**/*.{html,css,js}'",
-      "write": "prettier --write './**/*.{html,css,js}'",
-      "lint": "stylelint '**/*.css'",
-      "lintfix": "stylelint '**/*.css' --fix",
-      "checkALL": "npm run check && npm run lint",
-      "fixALL": "npm run format && npm run lintfix"
-    }
+    "check": "prettier --check './**/*.{html,css,js}'",
+    "write": "prettier --write './**/*.{html,css,js}'",
+    "lint": "stylelint '**/*.css'",
+    "lintfix": "stylelint '**/*.css' --fix",
+    "checkALL": "npm run check && npm run lint",
+    "fixALL": "npm run format && npm run lintfix"
+  }
 }
