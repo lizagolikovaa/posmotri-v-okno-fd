@@ -53,6 +53,7 @@ ol {
   grid-column: 1 / 4;
   grid-row: 2 / 5;
   align-self: end;
+  margin-top: 80px;
 }
 
 .result__video-container {
