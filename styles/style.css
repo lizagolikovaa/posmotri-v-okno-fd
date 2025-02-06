@@ -42,23 +42,23 @@ ol {
 
 .content {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto;
   align-content: center;
   justify-content: center;
   gap: 30px;
 }
 
 .result {
-  grid-column: 1 / 4;
-  grid-row: 2 / 5;
+  grid-column: 1;
+  grid-row: 1;
   align-self: end;
-  margin-top: 80px;
 }
 
 .result__video-container {
   position: relative;
-  width: 100%;
+  width: 710px;
+  height: 386px;
   margin-bottom: 16px;
 }
 
@@ -74,7 +74,7 @@ ol {
   align-items: flex-start;
   justify-content: space-between;
   gap: 20px;
-  width: 100%;
+  width: 710px;
 }
 
 .search-form__fieldset {
@@ -196,8 +196,8 @@ ol {
 }
 
 .content__details {
-  grid-column: 4 / 6;
-  grid-row: 1 / 5;
+  grid-column: 2;
+  grid-row: 1;
   align-self: end;
 }
 
