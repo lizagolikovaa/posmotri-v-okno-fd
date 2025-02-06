@@ -204,8 +204,6 @@ ol {
 .content__list-container {
   position: relative;
   margin-top: 26px;
-  padding: 5px;
-  width: 390px;
   height: 300px;
   overflow-y: auto;
   overflow-x: hidden;
@@ -227,7 +225,7 @@ ol {
 .content__list {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 25px;
 }
 
 .content__list-item {
