@@ -204,8 +204,7 @@ ol {
   position: relative;
   margin-top: 26px;
   height: 300px;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: auto;
 }
 
 .title {
@@ -269,12 +268,17 @@ ol {
   justify-content: space-between;
 }
 
+.content__video-card-description-container {
+  max-width: 196px;
+  flex-grow: 1;
+}
+
 .content__video-card-title {
   font-family: Oswald, sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 30px;
-  width: 196px;
+  width: 100%;
   text-transform: uppercase;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -287,6 +291,7 @@ ol {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-bot-orient: vertical;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -295,10 +300,6 @@ ol {
   height: 103px;
   object-fit: cover;
   object-position: center;
-}
-
-.content__video-card-description-container {
-  flex-grow: 1;
 }
 
 .visually-hidden {
